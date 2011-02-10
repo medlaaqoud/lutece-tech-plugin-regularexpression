@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans> 
+ 	 <!-- RegularExpression service -->
+	<bean id="regularExpressionService" class="fr.paris.lutece.plugins.regularexpression.service.RegularExpressionService"/>
+	<bean id="regularExpressionDAO"  class="fr.paris.lutece.plugins.regularexpression.business.RegularExpressionDAO" />
+</beans>
+ 	

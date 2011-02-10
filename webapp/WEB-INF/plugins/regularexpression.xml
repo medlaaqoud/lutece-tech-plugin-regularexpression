@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><plug-in>
+     <!-- Plugin Informations --> 
+    <name>regularexpression</name>
+    <class>fr.paris.lutece.plugins.regularexpression.service.RegularExpressionPlugin</class>
+    <version>2.0.3</version>
+    <description>digglike.plugin.description</description>
+    <documentation/>
+    <installation/>
+    <changes/>
+    <user-guide/>
+    <description>regularexpression.plugin.description</description>
+    <provider>regularexpression.plugin.provider</provider>
+    <provider-url>http://lutece.paris.fr</provider-url>
+    <icon-url>images/admin/skin/plugins/regularexpression/regularexpression.png</icon-url>
+    <copyright>Copyright 2001-2008 Mairie de Paris</copyright>
+    <db-pool-required>1</db-pool-required>
+    <!--  Specific plugin CSS stylesheet   --> 
+    
+    <!--Administration interface parameters-->
+    <admin-features>	
+        <admin-feature>
+            <feature-id>REGULAR_EXPRESSION_MANAGEMENT</feature-id>
+            <feature-title>regularexpression.adminFeature.regularexpression_management.name</feature-title>
+            <feature-description>regularexpression.adminFeature.regularexpression_management.description</feature-description>
+            <feature-level>0</feature-level>
+            <feature-url>jsp/admin/plugins/regularexpression/ManageRegularExpression.jsp</feature-url>
+           	<feature-icon-url>images/admin/skin/plugins/regularexpression/regularexpression.png</feature-icon-url>
+        </admin-feature>
+     </admin-features>
+   </plug-in>
