@@ -33,6 +33,8 @@
 
 	<properties>
 		<componentName>regularexpression</componentName>
+		<jiraProjectName>REGEXP</jiraProjectName>
+		<jiraComponentId>10171</jiraComponentId>
 	</properties>
     <scm>
         <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/technical/plugin-regularexpression</connection>
