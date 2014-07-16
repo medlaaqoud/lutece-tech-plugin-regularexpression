@@ -1,39 +1,39 @@
-<div class="row-fluid">
-	<div class="span12">
-	<fieldset>
-		<legend>#i18n{regularexpression.manage_regular_expression.title}
-		<form class="form-inline pull-right" method="post"  action="jsp/admin/plugins/regularexpression/CreateRegularExpression.jsp" >
-			<button class="btn btn-primary btn-small" type="submit" >
-				<i class="icon-plus icon-white"></i>&nbsp;#i18n{regularexpression.manage_regular_expression.button_create}
-			</button>
-        </form>
-		</legend>
-        <@paginationAdmin paginator=paginator combo=1 />
-		<table class="table table-striped table-condensed"> 
-		<thead>
-			<tr>
-              <th>#i18n{regularexpression.manage_regular_expression.row_title}</th>
-              <th>#i18n{regularexpression.manage_regular_expression.row_description}</th>
-              <th>#i18n{regularexpression.manage_regular_expression.row_actions}</th>
-            </tr>
-		</thead>
-		<tbody>		
-             <#list expression_list as expression>	
-	            <tr>
-					<td>${expression.title}</td>
-					<td>${expression.value}</td>
-					<td>
-						<a class="btn btn-primary btn-small" href="jsp/admin/plugins/regularexpression/ModifyRegularExpression.jsp?id_expression=${expression.idExpression}"  title="null" >
-							<i class="icon-edit icon-white"></i>
-						</a>
-						<a class="btn btn-danger btn-small" href="jsp/admin/plugins/regularexpression/ConfirmRemoveRegularExpression.jsp?id_expression=${expression.idExpression}"  title="#i18n{regularexpression.manage_regular_expression.alt_delete}" >
-							<i class="icon-trash icon-white"></i>
-						</a>
-					</td>
-	            </tr>
-	         </#list>
-        </tbody> 
-        </table> 
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12">
+		<fieldset>
+			<legend>#i18n{regularexpression.manage_regular_expression.title}
+			<form class="form-inline pull-right" method="post"  action="jsp/admin/plugins/regularexpression/CreateRegularExpression.jsp" >
+				<button class="btn btn-primary btn-sm" type="submit" >
+					<i class="glyphicon glyphicon-plus"></i>&nbsp;#i18n{regularexpression.manage_regular_expression.button_create}
+				</button>
+			</form>
+			</legend>
+			<@paginationAdmin paginator=paginator combo=1 />
+			<table class="table table-striped table-condensed"> 
+			<thead>
+				<tr>
+				  <th>#i18n{regularexpression.manage_regular_expression.row_title}</th>
+				  <th>#i18n{regularexpression.manage_regular_expression.row_description}</th>
+				  <th>#i18n{regularexpression.manage_regular_expression.row_actions}</th>
+				</tr>
+			</thead>
+			<tbody>		
+				 <#list expression_list as expression>	
+					<tr>
+						<td>${expression.title}</td>
+						<td>${expression.value}</td>
+						<td>
+							<a class="btn btn-primary btn-xs" href="jsp/admin/plugins/regularexpression/ModifyRegularExpression.jsp?id_expression=${expression.idExpression}" title="null">
+								<i class="glyphicon glyphicon-edit"></i>
+							</a>
+							<a class="btn btn-danger btn-xs" href="jsp/admin/plugins/regularexpression/ConfirmRemoveRegularExpression.jsp?id_expression=${expression.idExpression}" title="#i18n{regularexpression.manage_regular_expression.alt_delete}">
+								<i class="glyphicon glyphicon-trash"></i>
+							</a>
+						</td>
+					</tr>
+				 </#list>
+			</tbody> 
+			</table> 
 		</fieldset>
     </div> 
 </div> 
